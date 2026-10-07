@@ -35,6 +35,8 @@ logos/
 
 The monochrome logos (`nohapp-logo-light-mono.svg`, `nohapp-logo-dark-mono.svg`) are text only: the hand is a separate character now, so in one color the logo is just the wordmark. The mono hand part is still provided, in a solid style that matches the weight of the letters, in case the app animates the hand onto a monochrome logo.
 
+In the monochrome variants the letters and the underline are the same color, so the underline has small gaps where the two "p" tails cross it; this keeps the letters reading as in front of the line. The gaps are built into the mono `underline.svg` and `underline-text.svg` (each matches the letter positions of its own state). The color variants don't need them.
+
 The geometry is identical in every variant; only the colors change. So `parts/layout.json` is shared by all four.
 
 ## parts/layout.json
