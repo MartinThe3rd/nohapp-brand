@@ -40,10 +40,13 @@ All animations are 30 fps, transparent, and 512×512 unless noted. Each comes as
 | Blink once | `animations/blink/hand-blink-single.png` | 7 | 0.23 s |
 | Blink twice | `animations/blink/hand-blink-double.png` | 18 | 0.6 s |
 | Blink loop (pre-baked) | `animations/blink/hand-blink-loop.png` | 526 | 17.5 s, loops |
+| Accept: blink once | `animations/blink-accept/hand-accept-blink-single.png` | 7 | 0.23 s |
+| Accept: blink twice | `animations/blink-accept/hand-accept-blink-double.png` | 18 | 0.6 s |
+| Accept: blink loop (pre-baked) | `animations/blink-accept/hand-accept-blink-loop.png` | 526 | 17.5 s, loops |
 
 The wake-up animation rotates the hand around its bottom-left corner (the wrist), so it needs a little more room: its frames are 563×563 instead of 512×512, at the same scale. Align it with the other assets by its top-left corner; its last frame then sits exactly on top of `hand-standard.png`. Its first frame is the resting pose turned around that corner, so it sits a little lower and further right than the standalone `hand-resting.png`.
 
-The blink clips start and end on the open-eyed standard pose, so they can be played on top of `hand-standard.png` at any moment.
+The blink clips start and end on the open-eyed pose, so they can be played on top of the matching still image at any moment: `animations/blink/` on top of `hand-standard.png`, and `animations/blink-accept/` on top of `hand-accept.png`. Both use the same blink timing and the same loop pattern.
 
 ### Randomized blinking in the app
 
