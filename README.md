@@ -40,6 +40,7 @@ The hand character on its own (not the logo), 512×512, transparent:
 - `hand-accept.svg` / `.png`: excited thumbs-up with star eyes, for accept / approve
 - `hand-deny.svg` / `.png`: the hand flipped to a thumbs-down with a disappointed "sigh" face, for deny / reject
 - `hand-hello.svg` / `.png`: a waving open hand (👋) with raised brows and an open, calling-out mouth, for hello / greetings
+- `hand-annoyed.svg` / `.png`: the regular thumbs-up with the disappointed "sigh" face from the deny hand, for annoyed
 
 ## animations/
 
@@ -55,13 +56,14 @@ All animations are 30 fps, transparent, and 512×512 unless noted. Each comes as
 | Accept: blink twice | `animations/blink-accept/hand-accept-blink-double.png` | 18 | 0.6 s |
 | Accept: blink loop (pre-baked) | `animations/blink-accept/hand-accept-blink-loop.png` | 526 | 17.5 s, loops |
 | Deny / thumbs-down (loop) | `animations/deny/hand-deny-animated.png` | 24 | 0.8 s per head shake, loops seamlessly |
+| Annoyed (loop) | `animations/annoyed/hand-annoyed-animated.png` | 24 | 0.8 s per head shake, loops seamlessly |
 | Hello: blink once | `animations/blink-hello/hand-hello-blink-single.png` | 7 | 0.23 s |
 | Hello: blink twice | `animations/blink-hello/hand-hello-blink-double.png` | 18 | 0.6 s |
 | Hello: blink loop (pre-baked) | `animations/blink-hello/hand-hello-blink-loop.png` | 526 | 17.5 s, loops |
 
 The wake-up animation rotates the hand around its bottom-left corner (the wrist), so it needs a little more room: its frames are 563×563 instead of 512×512, at the same scale. Align it with the other assets by its top-left corner; its last frame then sits exactly on top of `hand-standard.png`. Its first frame is the resting pose turned around that corner, so it sits a little lower and further right than the standalone `hand-resting.png`.
 
-The blink clips start and end on the open-eyed pose, so they can be played on top of the matching still image at any moment: `animations/blink/` on top of `hand-standard.png`, `animations/blink-accept/` on top of `hand-accept.png`, and `animations/blink-hello/` on top of `hand-hello.png` (its eyes close into happy curved lids while the eyebrows lift). All three use the same blink timing and the same loop pattern. The deny / thumbs-down animation (`animations/deny/`) is a head shake that loops continuously on top of `hand-deny.png`: only the face turns, as if on an invisible round head, about 11° each way; the hand itself stays still.
+The blink clips start and end on the open-eyed pose, so they can be played on top of the matching still image at any moment: `animations/blink/` on top of `hand-standard.png`, `animations/blink-accept/` on top of `hand-accept.png`, and `animations/blink-hello/` on top of `hand-hello.png` (its eyes close into happy curved lids while the eyebrows lift). All three use the same blink timing and the same loop pattern. The deny / thumbs-down animation (`animations/deny/`) is a head shake that loops continuously on top of `hand-deny.png`: only the face turns, as if on an invisible round head, about 11° each way; the hand itself stays still. The annoyed animation (`animations/annoyed/`) is the same head shake on the regular thumbs-up, played on top of `hand-annoyed.png`.
 
 ### Randomized blinking in the app
 
