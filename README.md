@@ -27,6 +27,8 @@ The hand character on its own (not the logo), 512×512, transparent:
 
 - `hand-standard.svg` / `.png`: smiling, thumb up
 - `hand-resting.svg` / `.png`: asleep, thumb folded down onto the fingers
+- `hand-accept.svg` / `.png`: excited thumbs-up with star eyes, for accept / approve
+- `hand-deny.svg` / `.png`: the hand flipped to a thumbs-down with a disappointed "sigh" face, for deny / reject
 
 ## animations/
 
