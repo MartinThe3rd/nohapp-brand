@@ -1,0 +1,127 @@
+{
+  "units": "points; 1 point = 1 px when the letters are set at 220 px. Scale every value by the same factor.",
+  "coordinateSpace": "Both states share one space: origin is the top-left of the with-hand logo. The letters sit on the same baseline in both states, and the text-only word is centered on the same vertical center line, so animating x/opacity/scale of each part morphs one state into the other with no jumps.",
+  "canvas": {
+    "width": 813.25,
+    "height": 226.5
+  },
+  "states": {
+    "withHand": {
+      "contentBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 813.25,
+        "height": 226.5
+      },
+      "parts": {
+        "underline": {
+          "file": "underline.svg",
+          "x": 0.0,
+          "y": 185.0,
+          "width": 813.25,
+          "height": 19.5
+        },
+        "no": {
+          "file": "no.svg",
+          "x": 0.25,
+          "y": 68.5,
+          "width": 229.0,
+          "height": 114.25
+        },
+        "h": {
+          "file": "h.svg",
+          "x": 265.0,
+          "y": 20.75,
+          "width": 107.0,
+          "height": 160.25
+        },
+        "app": {
+          "file": "app.svg",
+          "x": 419.75,
+          "y": 26.25,
+          "width": 393.5,
+          "height": 200.25
+        },
+        "hand": {
+          "file": "hand.svg",
+          "visible": true,
+          "x": 235.25,
+          "y": 0.0,
+          "width": 179.25,
+          "height": 190.0
+        }
+      }
+    },
+    "textOnly": {
+      "contentBounds": {
+        "x": 33.75,
+        "y": 20.75,
+        "width": 745.75,
+        "height": 205.75
+      },
+      "parts": {
+        "underline": {
+          "file": "underline-text.svg",
+          "x": 33.75,
+          "y": 185.0,
+          "width": 745.75,
+          "height": 19.5
+        },
+        "no": {
+          "file": "no.svg",
+          "x": 34.25,
+          "y": 68.5,
+          "width": 229.0,
+          "height": 114.25
+        },
+        "h": {
+          "file": "h.svg",
+          "x": 271.244,
+          "y": 20.75,
+          "width": 107.0,
+          "height": 160.25
+        },
+        "app": {
+          "file": "app.svg",
+          "x": 385.523,
+          "y": 26.25,
+          "width": 393.5,
+          "height": 200.25
+        },
+        "hand": {
+          "file": "hand.svg",
+          "visible": false,
+          "x": 241.49,
+          "y": 0.0,
+          "width": 179.25,
+          "height": 190.0
+        }
+      }
+    }
+  },
+  "drawOrder": [
+    "underline",
+    "no",
+    "h",
+    "app",
+    "hand"
+  ],
+  "variants": {
+    "light-color": {
+      "folder": "parts/light-color",
+      "background": "#14ACBF"
+    },
+    "light-mono": {
+      "folder": "parts/light-mono",
+      "background": "#FFF6E0"
+    },
+    "dark-color": {
+      "folder": "parts/dark-color",
+      "background": "#0A2A33"
+    },
+    "dark-mono": {
+      "folder": "parts/dark-mono",
+      "background": "#0A2A33"
+    }
+  }
+}
