@@ -29,9 +29,11 @@ logos/
 | Variant | Letters | Underline | Hand | Use on |
 |---|---|---|---|---|
 | `light-color` | white `#FFFFFF` | yellow `#FFC928` | yellow, full color | turquoise `#14ACBF` |
-| `light-mono` | navy `#0B3B4A` | navy | navy line drawing, filled sand | sand `#FFF6E0` / light backgrounds |
+| `light-mono` | navy `#0B3B4A` | navy | solid navy, details cut out in sand | sand `#FFF6E0` / light backgrounds |
 | `dark-color` | teal `#2EC4D6` | yellow `#FFC928` | yellow, full color | navy `#0A2A33` / dark backgrounds |
-| `dark-mono` | sand `#FFF6E0` | sand | sand line drawing, filled navy | navy `#0A2A33` / dark backgrounds |
+| `dark-mono` | sand `#FFF6E0` | sand | solid sand, details cut out in navy | navy `#0A2A33` / dark backgrounds |
+
+The monochrome logos (`nohapp-logo-light-mono.svg`, `nohapp-logo-dark-mono.svg`) are text only: the hand is a separate character now, so in one color the logo is just the wordmark. The mono hand part is still provided, in a solid style that matches the weight of the letters, in case the app animates the hand onto a monochrome logo.
 
 The geometry is identical in every variant; only the colors change. So `parts/layout.json` is shared by all four.
 

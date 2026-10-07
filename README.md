@@ -15,7 +15,7 @@ The main logo is "no👍app!": the word "nohapp!" typed out in Fredoka SemiBold,
 | `logos/parts/<variant>/` | `no`, `h`, `app`, `hand`, `underline`, `underline-text` as separate SVGs |
 | `logos/parts/layout.json` | Where each part goes, in both states |
 
-Variants: `light-color` (white letters, for turquoise `#14ACBF`), `light-mono` (navy, for light backgrounds), `dark-color` (teal `#2EC4D6` letters, for dark backgrounds), `dark-mono` (sand, for dark backgrounds). All are vectors with the letters converted to outlines (Fredoka, SIL Open Font License), so no font install is needed.
+Variants: `light-color` (white letters, for turquoise `#14ACBF`), `light-mono` (navy, for light backgrounds), `dark-color` (teal `#2EC4D6` letters, for dark backgrounds), `dark-mono` (sand, for dark backgrounds). The two monochrome logos are text only, without the hand. All are vectors with the letters converted to outlines (Fredoka, SIL Open Font License), so no font install is needed.
 
 ## icons/
 
