@@ -19,7 +19,17 @@ Variants: `light-color` (white letters, for turquoise `#14ACBF`), `light-mono` (
 
 ## icons/
 
-App icons go here.
+App icons, the smiling hand on a sky background. Each comes as SVG and as a 1024×1024 PNG.
+
+| File | Use |
+|---|---|
+| `nohapp-app-icon-light-color.png` | Main app icon (daylight sky gradient) |
+| `nohapp-app-icon-dark-color.png` | Dark-mode app icon (night sky with a few stars) |
+| `nohapp-app-icon-light-mono.png` | Monochrome, navy line drawing on sand |
+| `nohapp-app-icon-dark-mono.png` | Monochrome, sand line drawing on navy |
+| `*-rounded.svg` / `*-rounded.png` | Same icons with rounded corners, for websites, mockups and presentations |
+
+The plain (square) files are for Xcode and the App Store: square corners and no transparency, because iOS rounds the corners itself. On iOS 18 and later, the light and dark color icons can be set as the app icon's "Any" and "Dark" appearances in the asset catalog.
 
 ## characters/hand/
 
