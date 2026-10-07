@@ -43,11 +43,11 @@ All animations are 30 fps, transparent, and 512×512 unless noted. Each comes as
 | Accept: blink once | `animations/blink-accept/hand-accept-blink-single.png` | 7 | 0.23 s |
 | Accept: blink twice | `animations/blink-accept/hand-accept-blink-double.png` | 18 | 0.6 s |
 | Accept: blink loop (pre-baked) | `animations/blink-accept/hand-accept-blink-loop.png` | 526 | 17.5 s, loops |
-| Deny: head shake (loop) | `animations/deny-shake/hand-deny-shake.png` | 24 | 0.8 s per shake, loops seamlessly |
+| Deny / thumbs-down (loop) | `animations/deny/hand-deny-animated.png` | 24 | 0.8 s per head shake, loops seamlessly |
 
 The wake-up animation rotates the hand around its bottom-left corner (the wrist), so it needs a little more room: its frames are 563×563 instead of 512×512, at the same scale. Align it with the other assets by its top-left corner; its last frame then sits exactly on top of `hand-standard.png`. Its first frame is the resting pose turned around that corner, so it sits a little lower and further right than the standalone `hand-resting.png`.
 
-The blink clips start and end on the open-eyed pose, so they can be played on top of the matching still image at any moment: `animations/blink/` on top of `hand-standard.png`, and `animations/blink-accept/` on top of `hand-accept.png`. Both use the same blink timing and the same loop pattern. The deny head shake (`animations/deny-shake/`) loops continuously on top of `hand-deny.png`: only the face turns, as if on an invisible round head, about 11° each way; the hand itself stays still.
+The blink clips start and end on the open-eyed pose, so they can be played on top of the matching still image at any moment: `animations/blink/` on top of `hand-standard.png`, and `animations/blink-accept/` on top of `hand-accept.png`. Both use the same blink timing and the same loop pattern. The deny / thumbs-down animation (`animations/deny/`) is a head shake that loops continuously on top of `hand-deny.png`: only the face turns, as if on an invisible round head, about 11° each way; the hand itself stays still.
 
 ### Randomized blinking in the app
 
