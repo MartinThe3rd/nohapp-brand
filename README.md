@@ -46,7 +46,7 @@ All animations are 30 fps, 512×512, transparent. Each comes as an animated PNG 
 | Wake up: resting → standard | `animations/wake/hand-wake.png` | 28 | 0.93 s, ends on standard |
 | Blink once | `animations/blink/hand-blink-single.png` | 7 | 0.23 s |
 | Blink twice | `animations/blink/hand-blink-double.png` | 18 | 0.6 s |
-| Blink loop (pre-baked) | `animations/blink/hand-blink-loop.png` | 754 | 25.1 s, loops |
+| Blink loop (pre-baked) | `animations/blink/hand-blink-loop.png` | 757 | 25.2 s, loops |
 
 The blink clips start and end on the open-eyed standard pose, so they can be played on top of `hand-standard.png` at any moment.
 
