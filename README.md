@@ -30,14 +30,16 @@ The hand character on its own (not the logo), 512×512, transparent:
 
 ## animations/
 
-All animations are 30 fps, 512×512, transparent. Each comes as an animated PNG (APNG) plus numbered frames in `frames/png/` and `frames/svg/`. The hand is drawn at the same scale in every frame and matches the static poses above.
+All animations are 30 fps, transparent, and 512×512 unless noted. Each comes as an animated PNG (APNG) plus numbered frames in `frames/png/` and `frames/svg/`. The hand is drawn at the same scale in every frame and matches the static poses above.
 
 | Animation | File | Frames | Length |
 |---|---|---|---|
-| Wake up: resting → standard | `animations/wake/hand-wake.png` | 28 | 0.93 s, ends on standard |
+| Wake up: resting → standard | `animations/wake/hand-wake.png` | 28 | 0.93 s, ends on standard, 563×563 (see note) |
 | Blink once | `animations/blink/hand-blink-single.png` | 7 | 0.23 s |
 | Blink twice | `animations/blink/hand-blink-double.png` | 18 | 0.6 s |
 | Blink loop (pre-baked) | `animations/blink/hand-blink-loop.png` | 526 | 17.5 s, loops |
+
+The wake-up animation rotates the hand around its bottom-left corner (the wrist), so it needs a little more room: its frames are 563×563 instead of 512×512, at the same scale. Align it with the other assets by its top-left corner; its last frame then sits exactly on top of `hand-standard.png`. Its first frame is the resting pose turned around that corner, so it sits a little lower and further right than the standalone `hand-resting.png`.
 
 The blink clips start and end on the open-eyed standard pose, so they can be played on top of `hand-standard.png` at any moment.
 
