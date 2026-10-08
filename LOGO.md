@@ -37,6 +37,8 @@ The monochrome logos (`nohapp-logo-light-mono.svg`, `nohapp-logo-dark-mono.svg`)
 
 In the monochrome variants the letters and the underline are the same color, so the underline has small gaps where the two "p" tails cross it; this keeps the letters reading as in front of the line. The gaps are built into the mono `underline.svg` and `underline-text.svg` (each matches the letter positions of its own state). The color variants don't need them.
 
+The underline stroke is 14 units wide in the logo's own coordinates (about 1.7% of the logo width), so it scales with the logo: at 170 pt wide it is about 2.9 pt. It sits a few units below the letters to leave a little air under the n, o, hand and a.
+
 The geometry is identical in every variant; only the colors change. So `parts/layout.json` is shared by all four.
 
 ## parts/layout.json
